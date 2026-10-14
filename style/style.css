@@ -1,0 +1,427 @@
+/*estilos generales*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #F5F5F5;
+    background-color: #0F1115;
+    margin: 0;
+}
+
+.anta-regular {
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*transiciones globales para elementos interactivos*/
+a, .btn, .nav-link, .card, .dropwdown-item {
+    transition: all 0.3s ease;
+}
+/*estilos de la barra de navegacion*/
+.logo {
+   max-width: 200px;
+    height: auto;
+}
+header .navbar {
+    background-color: #0F1115;
+    border-bottom: 2px solid #FF4655;
+    padding: 10px 20px;
+}
+.navbar-brand .logo {
+    max-width: 150px;
+    height: auto;
+}
+/*selectores especificos para los links del menu*/
+header .navbar-nav .nav-link {
+    color: #FF4655;
+    font-size: 1rem; 
+    font-weight: 600;
+        
+}
+/* Contenedor del menú desplegable */
+.dropdown-menu {
+    background-color: #161920;
+    border: 1px solid rgba(255, 70, 85, 0.4); 
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem !important; 
+}
+
+/* Opciones individuales del menú */
+.dropdown-item {
+    color: #E2E8F0;
+    font-family: 'Anta', sans-serif;
+    font-size: 0.95rem;
+    padding: 0.5rem 1.2rem;
+    transition: all 0.2s ease;
+    text-transform: capitalize;
+}
+
+/* Estado hover*/
+.dropdown-item:hover, 
+.dropdown-item:focus {
+    background-color: rgba(255, 70, 85, 0.2);
+    color: #00ECE6;
+}
+
+/* Línea divisoria dentro del dropdown*/
+.dropdown-divider {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+/*estados interactivos limpios*/
+header .navbar-nav .nav-link.active {
+    transform: translateY(0);
+    color: #FFFFFF;
+    border-bottom: 2px solid #00ECE6;
+    font-weight: 700;
+    text-shadow: 0 0 8px rgba(0, 236, 230, 0.4);
+}
+
+/*contenido principal*/
+.contenido-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+    background-color: #232529;
+}
+
+.carousel {
+    width: 100vw;              
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;       
+    margin-right: -50vw;
+    margin-top: 0;            
+    margin-bottom: 3rem;      
+    border-radius: 0;         
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
+    border-bottom: 3px solid #FF4655; 
+}
+
+.carousel-item {
+    height: 520px;            
+    background-color: #0F1115;
+    position: relative;
+}
+
+
+.carousel-item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 17, 21, 0.5);
+    z-index: 1;
+}
+
+.carousel-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel .carousel-caption {
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    padding: 0;
+    font-family: 'Anta', sans-serif;
+    text-align: center;
+}
+
+.carousel .carousel-caption h5 {
+    color: #FFFFFF;
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.9);
+}
+
+.carousel .carousel-caption p {
+    color: #E2E8F0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+    margin-bottom: 0;
+}
+
+/* Controles e indicadores */
+.carousel-control-prev, 
+.carousel-control-next {
+    width: 7%;
+    transition: background-color 0.3s ease;
+    z-index: 3;
+}
+
+.carousel-control-prev:hover, 
+.carousel-control-next:hover {
+    background: rgba(255, 70, 85, 0.25);
+}
+
+.carousel-indicators {
+    z-index: 3;
+    bottom: 1.5rem;
+}
+/*contenido principal*/
+.titulo-seccion {
+    font-family: 'Anta', sans-serif;
+    color: #00ECE6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Estilo para las Cards */
+.card-valohub {
+    background-color: #161920;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #FFFFFF;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-valohub:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+    border-color: #FF4655;
+    box-shadow: 0 8px 20px rgba(255, 70, 85, 0.25);
+}
+
+.card-valohub .card-img-top {
+    height: 280px;
+    object-fit: cover;
+    object-position: center top;
+    background-color: #0B0E14;
+}
+
+.card-valohub .card-title {
+    font-family: 'Anta', sans-serif;
+    color: #FFFFFF;
+}
+
+.card-valohub .card-text {
+    color: #A0AEC0;
+    font-size: 0.95rem;
+}
+
+/* Badges / Etiquetas */
+.badge-rojo {
+    background-color: #FF4655;
+    color: #FFF;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.badge-cian {
+    background-color: #00ECE6;
+    color: #0F1115;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Botones con estilo */
+.btn-valohub {
+    background-color: transparent;
+    border: 1px solid #00ECE6;
+    color: #00ECE6;
+    font-family: 'Anta', sans-serif;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-valohub:hover {
+    background-color: #00ECE6;
+    color: #0F1115;
+    box-shadow: 0 0 12px rgba(0, 236, 230, 0.4);
+}
+
+.btn-valohub-rojo {
+    background-color: #FF4655;
+    color: #FFFFFF;
+    font-family: 'Anta', sans-serif;
+    text-transform: uppercase;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-valohub-rojo:hover {
+    background-color: #E03E4C;
+    color: #FFFFFF;
+    box-shadow: 0 0 15px rgba(255, 70, 85, 0.5);
+}
+
+/* Banner de actualización */
+.banner-destacado {
+    background: linear-gradient(135deg, #161920 0%, #0F1115 100%);
+    border: 1px solid rgba(0, 236, 230, 0.3);
+}
+.titulo-principal {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.texto-introduccion {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.titulo-secundario {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.titulo-terciario {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/*contenido secundario*/
+.contenido-secundario {
+    padding: 40px;
+    background-color: #232529;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-secundario ul {
+    list-style: disc;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/*pie de pagina*/
+.pie-pagina {
+    background-color: #0F1115;
+    color: #F5F5F5;
+    text-align: center;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+/*estilos de la pagina de agentes*/
+.pagina-agentes .contenido-principal {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+}
+
+.contenedor-agentes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tarjeta-agente {
+    background-color: #1A1D24;
+    padding: 25px;
+    border-radius: 8px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-between;
+
+}
+
+.lista-roles {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 20px;
+    color: #FF4655;
+    padding-left: 20px;
+}
+
+.imagen-agente {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    /*esto lo tuve que buscar en oogle para poder ajustar las imagenes que todas tenian diferentes tamaños, aprendi algo nuevo por lo menos (pd:me dio dolores de cabeza) */
+    border-radius: 4px;
+}
+
+.rol-agente {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #FF4655;
+}
+/*estilos de la pagina de estrategias*/
+.intro-estrategia {
+    grid-area: estrategias;
+}
+
+.tarjeta-comunicacion {
+    grid-area: comunicacion;
+}
+
+.tarjeta-control {
+    grid-area: control;
+}
+
+.diagrama-tactico {
+    grid-area: tactico;
+    background-color: #1f2326;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #FF4655;
+    min-width: 0;
+}
+.diagrama-tactico figure {
+    margin: 0;
+    text-align: center;
+}
+.diagrama-tactico img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin:20px auto;
+    border-radius: 8px;
+    border:1px solid #FF4655; 
+}
+.contenedor-estrategia {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "estrategias"
+        "comunicacion"
+        "control"
+        "tactico";
+    gap: 20px;
+    padding: 20px;
+}
+
+@media (min-width: 1024px) {
+     .contenedor-estrategia {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "estrategias estrategias"
+            "comunicacion control"
+            "tactico tactico";
+    }
+}
