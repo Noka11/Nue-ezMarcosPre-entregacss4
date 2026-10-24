@@ -30,3 +30,9 @@ valohub/
 │
 └── assets/
     └── img/                # Imágenes, logos y banners oficiales
+    ---
+
+## 🔀 Flujo de Trabajo Colaborativo (Git / GitHub)
+Este proyecto aplica el flujo de trabajo profesional **Feature Branching**:
+* `main`: Rama principal estable con el código de producción.
+* `feature/*`: Ramas independientes utilizadas para incorporar nuevas funcionalidades, scripts de JavaScript y actualizaciones antes de integrarlas mediante Pull Requests.
