@@ -7,6 +7,7 @@
     <title>ValoHub</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -111,67 +112,85 @@
                 <p class="text-muted">Todo lo que necesitas para mejorar tu nivel en un solo lugar</p>
             </div>
 
-            <div class="row g-4">
-                <!-- Tarjeta 1: Agentes -->
-                <div class="col-12 col-md-4">
-                    <div class="card card-valohub h-100">
-                        <img src="./assets/img/slide1agentes.jpg" class="card-img-top" alt="Agentes de Valorant">
-                        <div class="card-body d-flex flex-column">
-                            <span class="badge badge-rojo mb-2 w-auto me-auto">Personajes</span>
-                            <h5 class="card-title">Base de Datos de Agentes</h5>
-                            <p class="card-text flex-grow-1">Domina los roles de Duelista, Iniciador, Controlador y
-                                Centinela con sus habilidades explicadas a detalle.</p>
-                            <a href="./pages/agentes.html" class="btn btn-valohub mt-auto">Ver Agentes</a>
+            <section class="container my-5">
+                <div class="row g-4 animar-entrada">
+                    <!-- Tarjeta 1: Agentes -->
+                    <div class="col-12 col-md-4">
+                        <div class="card card-valohub h-100">
+                            <img src="./assets/img/slide1agentes.jpg" class="card-img-top" alt="Agentes de Valorant">
+                            <div class="card-body d-flex flex-column">
+                                <span class="badge badge-rojo mb-2 w-auto me-auto">Personajes</span>
+                                <h5 class="card-title">Base de Datos de Agentes</h5>
+                                <p class="card-text flex-grow-1">Domina los roles de Duelista, Iniciador, Controlador y
+                                    Centinela con sus habilidades explicadas a detalle.</p>
+                                <a href="./pages/agentes.html" class="btn btn-valohub mt-auto">Ver Agentes</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Tarjeta 2: Mapas -->
-                <div class="col-12 col-md-4">
-                    <div class="card card-valohub h-100">
-                        <img src="./assets/img/slide2mapas.jpg" class="card-img-top" alt="Estrategias de Mapa">
-                        <div class="card-body d-flex flex-column">
-                            <span class="badge badge-cian mb-2 w-auto me-auto">Estrategia</span>
-                            <h5 class="card-title">Guía de Mapas & Callouts</h5>
-                            <p class="card-text flex-grow-1">Aprende los ángulos clave, alineaciones de utilidades
-                                (lineups) y rotaciones eficaces en cada mapa.</p>
-                            <a href="./pages/mapas.html" class="btn btn-valohub mt-auto">Explorar Mapas</a>
+                    <!-- Tarjeta 2: Mapas -->
+                    <div class="col-12 col-md-4">
+                        <div class="card card-valohub h-100">
+                            <img src="./assets/img/slide2mapas.jpg" class="card-img-top" alt="Estrategias de Mapa">
+                            <div class="card-body d-flex flex-column">
+                                <span class="badge badge-cian mb-2 w-auto me-auto">Estrategia</span>
+                                <h5 class="card-title">Guía de Mapas & Callouts</h5>
+                                <p class="card-text flex-grow-1">Aprende los ángulos clave, alineaciones de utilidades
+                                    (lineups) y rotaciones eficaces en cada mapa.</p>
+                                <a href="./pages/mapas.html" class="btn btn-valohub mt-auto">Explorar Mapas</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Tarjeta 3: Estrategias / Esports -->
-                <div class="col-12 col-md-4">
-                    <div class="card card-valohub h-100">
-                        <img src="./assets/img/slide3esports.png" class="card-img-top" alt="Esports de Valorant">
-                        <div class="card-body d-flex flex-column">
-                            <span class="badge badge-rojo mb-2 w-auto me-auto">Competitivo</span>
-                            <h5 class="card-title">Estrategias & Competitivo</h5>
-                            <p class="card-text flex-grow-1">Estrategias avanzadas de juego en equipo, lectura del
-                                circuito eSports VCT y análisis de parches.</p>
-                            <a href="./pages/estrategias.html" class="btn btn-valohub mt-auto">Leer Guías</a>
+                    <!-- Tarjeta 3: Estrategias / Esports -->
+                    <div class="col-12 col-md-4">
+                        <div class="card card-valohub h-100">
+                            <img src="./assets/img/slide3esports.png" class="card-img-top" alt="Esports de Valorant">
+                            <div class="card-body d-flex flex-column">
+                                <span class="badge badge-rojo mb-2 w-auto me-auto">Competitivo</span>
+                                <h5 class="card-title">Estrategias & Competitivo</h5>
+                                <p class="card-text flex-grow-1">Estrategias avanzadas de juego en equipo, lectura del
+                                    circuito eSports VCT y análisis de parches.</p>
+                                <a href="./pages/estrategias.html" class="btn btn-valohub mt-auto">Leer Guías</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="container my-5">
-            <div
-                class="banner-destacado p-4 p-md-5 rounded-3 border-valohub d-flex flex-column flex-md-row align-items-center justify-content-between">
-                <div class="me-md-4 mb-3 mb-md-0">
-                    <span class="badge badge-cian mb-2">Última Actualización</span>
-                    <h3 class="mb-2">Notas del Parche Destacado</h3>
-                    <p class="mb-0 text-light opacity-75">Revisa los últimos ajustes de balance a los agentes,
-                        corrección de errores y cambios en el pool competitivo de mapas.</p>
+            </section>
+
+            <!-- Banner de actualización con animación de zoom sutil -->
+            <section class="container my-5" data-aos="zoom-in" data-aos-duration="900">
+                <div
+                    class="banner-destacado p-4 p-md-5 rounded-3 border-valohub d-flex flex-column flex-md-row align-items-center justify-content-between">
+                    <div class="me-md-4 mb-3 mb-md-0">
+                        <span class="badge badge-cian mb-2">Última Actualización</span>
+                        <h3 class="mb-2">Notas del Parche Destacado</h3>
+                        <p class="mb-0 text-light opacity-75">Revisa los últimos ajustes de balance a los agentes,
+                            corrección de errores y cambios en el pool competitivo de mapas.</p>
+                    </div>
+                    <a href="#" class="btn btn-valohub-rojo text-nowrap">Ver Notas del Parche</a>
                 </div>
-                <a href="#" class="btn btn-valohub-rojo text-nowrap">Ver Notas del Parche</a>
-            </div>
-        </section>
+            </section>
     </main>
+
     <footer class="pie-pagina text-center py-4 mt-5 text-muted border-top border-secondary">
         <p class="mb-0">© 2026 ValoHub</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: "ease out",
+            once: true,
+            offset: 100
+
+        });
+    </script>
 </body>
 
 </html>
