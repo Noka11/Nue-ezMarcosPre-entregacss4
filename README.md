@@ -1,38 +1,48 @@
-# 🎮 ValoHub - Portal de Valorant & Esports
+# 🎮 ValoHub | Portal de Valorant & Esports
 
-**ValoHub** es un sitio web desarrollado como proyecto para **Coderhouse**, diseñado para ofrecer a la comunidad de jugadores de Valorant un espacio centralizado con información sobre agentes, mapas, estrategias, notas de parches y el circuito competitivo de Esports (VCT).
+**ValoHub** es un portal web interactivo diseñado para la comunidad de Valorant, centralizando información sobre agentes, mapas, estrategias tácticas y notas del parche del circuito competitivo VCT. Proyecto desarrollado en el marco de la carrera de Desarrollo Web en Coderhouse.
 
 ---
 
-## 🚀 Tecnologías y Herramientas Utilizadas
-* **HTML5:** Estructura semántica clara de las páginas.
-* **CSS3:** Estilos personalizados, paleta de colores temática y diseño adaptativo.
-* **Bootstrap 5 (CDN):** Framework para componentes responsive (Navbar, Carrusel, Grid de Cards y Dropdowns).
-* **Google Fonts:** Tipografía *Anta* para títulos y elementos de interfaz gamer.
-* **Git y GitHub:** Control de versiones y despliegue web mediante GitHub Pages.
+## ✨ Características Principales (Pre-Entrega 5)
+
+* **Animaciones y Transiciones Fluidas:** Implementación de animaciones personalizadas mediante `@keyframes` y efectos interactivos en elementos de navegación y tarjetas (`hover` con elevación y sombras de neón).
+* **Librería AOS (Animate On Scroll):** Integración de animaciones al hacer scroll para un despliegue visual elegante en las distintas secciones.
+* **Diseño 100% Responsivo:** Maquetación adaptada para dispositivos móviles, tablets y escritorios utilizando Flexbox, CSS Grid y componentes avanzados de Bootstrap 5.
+* **Accesibilidad Web:** Incorporación de la regla `@media (prefers-reduced-motion: reduce)` para respetar las preferencias de movimiento del sistema del usuario.
+
+---
+
+## 🛠️ Tecnologías Utilizadas
+
+* **HTML5** (Estructura semántica)
+* **CSS3 / Sass** (Estilos personalizados, variables y animaciones)
+* **Bootstrap 5** (Sistema de grillas, componentes y utilidades)
+* **AOS Library** (Animaciones de desplazamiento)
+* **Git & GitHub** (Control de versiones y flujo de trabajo mediante ramas)
+
+---
+
+## 🚀 Futuras Actualizaciones (Roadmap)
+
+* [ ] **Estilización avanzada de la página de Mapas (`mapas.html`):** Incorporar fichas tácticas detalladas con callouts específicos y grillas interactivas para cada escenario.
+* [ ] **Optimización de la página de Estrategias (`estrategias.html`):** Refinar el diseño de los diagramas tácticos y guías de equipo usando layouts avanzados en CSS Grid.
+* [ ] **Sección de Parches:** Ampliar el historial de notas de actualización con filtros interactivos por versión del juego.
 
 ---
 
 ## 📂 Estructura del Proyecto
+
 ```text
 valohub/
 │
-├── index.html              # Página principal (con carrusel y destacados)
+├── index.html
 ├── pages/
-│   ├── agentes.html        # Sección de personajes y roles
-│   ├── mapas.html          # Guía y callouts de mapas
-│   ├── estrategias.html    # Tácticas de juego en equipo
-│   ├── parches.html        # Notas de actualización
-│   └── esports.html        # Cobertura del circuito competitivo VCT
-│
+│   ├── agentes.html
+│   ├── mapas.html
+│   ├── estrategias.html
+│   └── parches.html
 ├── style/
-│   └── style.css           # Estilos personalizados y paleta temática
-│
+│   └── style.css
 └── assets/
-    └── img/                # Imágenes, logos y banners oficiales
-    ---
-
-## 🔀 Flujo de Trabajo Colaborativo (Git / GitHub)
-Este proyecto aplica el flujo de trabajo profesional **Feature Branching**:
-* `main`: Rama principal estable con el código de producción.
-* `feature/*`: Ramas independientes utilizadas para incorporar nuevas funcionalidades, scripts de JavaScript y actualizaciones antes de integrarlas mediante Pull Requests.
+    └── img/

@@ -9,6 +9,9 @@ body {
     color: #F5F5F5;
     background-color: #0F1115;
     margin: 0;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .anta-regular {
@@ -17,44 +20,47 @@ body {
     font-style: normal;
 }
 
-body {
-    font-family: "Anta", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
 /*transiciones globales para elementos interactivos*/
-a, .btn, .nav-link, .card, .dropwdown-item {
+a,
+.btn,
+.nav-link,
+.card,
+.dropdown-item {
     transition: all 0.3s ease;
 }
+
 /*estilos de la barra de navegacion*/
 .logo {
-   max-width: 200px;
+    max-width: 200px;
     height: auto;
 }
+
 header .navbar {
     background-color: #0F1115;
     border-bottom: 2px solid #FF4655;
     padding: 10px 20px;
 }
+
 .navbar-brand .logo {
     max-width: 150px;
     height: auto;
 }
+
 /*selectores especificos para los links del menu*/
 header .navbar-nav .nav-link {
     color: #FF4655;
-    font-size: 1rem; 
+    font-size: 1rem;
     font-weight: 600;
-        
 }
+
 /* Contenedor del menú desplegable */
 .dropdown-menu {
     background-color: #161920;
-    border: 1px solid rgba(255, 70, 85, 0.4); 
+    border: 1px solid rgba(255, 70, 85, 0.4);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
     border-radius: 8px;
     padding: 0.5rem 0;
-    margin-top: 0.5rem !important; 
+    margin-top: 0.5rem !important;
 }
 
 /* Opciones individuales del menú */
@@ -68,7 +74,7 @@ header .navbar-nav .nav-link {
 }
 
 /* Estado hover*/
-.dropdown-item:hover, 
+.dropdown-item:hover,
 .dropdown-item:focus {
     background-color: rgba(255, 70, 85, 0.2);
     color: #00ECE6;
@@ -78,6 +84,7 @@ header .navbar-nav .nav-link {
 .dropdown-divider {
     border-color: rgba(255, 255, 255, 0.1);
 }
+
 /*estados interactivos limpios*/
 header .navbar-nav .nav-link.active {
     transform: translateY(0);
@@ -98,27 +105,25 @@ header .navbar-nav .nav-link.active {
 }
 
 .carousel {
-    width: 100vw;              
+    width: 100vw;
     position: relative;
     left: 50%;
     right: 50%;
-    margin-left: -50vw;       
+    margin-left: -50vw;
     margin-right: -50vw;
-    margin-top: 0;            
-    margin-bottom: 3rem;      
-    border-radius: 0;         
+    margin-top: 0;
+    margin-bottom: 3rem;
+    border-radius: 0;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
-    border-bottom: 3px solid #FF4655; 
+    border-bottom: 3px solid #FF4655;
 }
 
 .carousel-item {
-    height: 520px;            
+
+    height: 520px;
     background-color: #0F1115;
-    position: relative;
-}
-
-
+    position: relative;}
 .carousel-item::after {
     content: '';
     position: absolute;
@@ -168,14 +173,14 @@ header .navbar-nav .nav-link.active {
 }
 
 /* Controles e indicadores */
-.carousel-control-prev, 
+ .carousel-control-prev,
 .carousel-control-next {
     width: 7%;
     transition: background-color 0.3s ease;
     z-index: 3;
 }
 
-.carousel-control-prev:hover, 
+.carousel-control-prev:hover,
 .carousel-control-next:hover {
     background: rgba(255, 70, 85, 0.25);
 }
@@ -184,7 +189,7 @@ header .navbar-nav .nav-link.active {
     z-index: 3;
     bottom: 1.5rem;
 }
-/*contenido principal*/
+
 .titulo-seccion {
     font-family: 'Anta', sans-serif;
     color: #00ECE6;
@@ -201,7 +206,7 @@ header .navbar-nav .nav-link.active {
 }
 
 .card-valohub:hover {
-    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+    transform: translateY(-5px);
     border-color: #FF4655;
     box-shadow: 0 8px 20px rgba(255, 70, 85, 0.25);
 }
@@ -275,6 +280,7 @@ header .navbar-nav .nav-link.active {
     background: linear-gradient(135deg, #161920 0%, #0F1115 100%);
     border: 1px solid rgba(0, 236, 230, 0.3);
 }
+
 .titulo-principal {
     font-size: 36px;
     margin-bottom: 20px;
@@ -344,7 +350,6 @@ header .navbar-nav .nav-link.active {
     flex-direction: column;
     box-sizing: border-box;
     justify-content: space-between;
-
 }
 
 .lista-roles {
@@ -361,7 +366,6 @@ header .navbar-nav .nav-link.active {
     width: 100%;
     height: 250px;
     object-fit: contain;
-    /*esto lo tuve que buscar en oogle para poder ajustar las imagenes que todas tenian diferentes tamaños, aprendi algo nuevo por lo menos (pd:me dio dolores de cabeza) */
     border-radius: 4px;
 }
 
@@ -370,6 +374,7 @@ header .navbar-nav .nav-link.active {
     margin-bottom: 5px;
     color: #FF4655;
 }
+
 /*estilos de la pagina de estrategias*/
 .intro-estrategia {
     grid-area: estrategias;
@@ -391,19 +396,22 @@ header .navbar-nav .nav-link.active {
     border-left: 4px solid #FF4655;
     min-width: 0;
 }
+
 .diagrama-tactico figure {
     margin: 0;
     text-align: center;
 }
+
 .diagrama-tactico img {
     width: 100%;
     max-width: 600px;
     height: auto;
     display: block;
-    margin:20px auto;
+    margin: 20px auto;
     border-radius: 8px;
-    border:1px solid #FF4655; 
+    border: 1px solid #FF4655;
 }
+
 .contenedor-estrategia {
     display: grid;
     grid-template-columns: 1fr;
@@ -416,12 +424,67 @@ header .navbar-nav .nav-link.active {
     padding: 20px;
 }
 
-@media (min-width: 1024px) {
-     .contenedor-estrategia {
-        grid-template-columns: 1fr 1fr;
+/* ==========================================
+   REQUISITOS PRE-ENTREGA 5: ANIMACIONES & ACCESIBILIDAD
+   ========================================== */
+
+/* 1. Animación con @keyframes de más de dos pasos (Flotación) */
+@keyframes entradaSuave {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    50% {
+        opacity: 0.6;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animar-entrada {
+    animation: entradaSuave 1.2s ease-out forwards;
+}
+
+.banner-animado {
+    animation: flotarValo 3s ease-in-out infinite;
+}
+
+/* Transición suave sobre cambio de estado para cards y botones */
+.card-valohub,.btn-primary,.btn-valohub {
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.card-valohub:hover {
+    transform: translateY(-5px) scale(1.02);
+}
+
+/* Media Queries Responsive (Cierre para Tablets y Desktop) */
+@media (min-width: 768px) {
+    .contenedor-estrategia {
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
-            "estrategias estrategias"
-            "comunicacion control"
-            "tactico tactico";
+            "estrategias comunicacion"
+            "control tactico";
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel-item {
+        height: 580px;
+    }
+}
+
+/* 4. Accesibilidad Obligatoria: Desactiva animaciones si el usuario lo prefiere */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
     }
 }
