@@ -13,13 +13,6 @@ body {
     font-weight: 400;
     font-style: normal;
 }
-
-.anta-regular {
-    font-family: "Anta", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
 /*transiciones globales para elementos interactivos*/
 a,
 .btn,
@@ -280,12 +273,6 @@ header .navbar-nav .nav-link.active {
     background: linear-gradient(135deg, #161920 0%, #0F1115 100%);
     border: 1px solid rgba(0, 236, 230, 0.3);
 }
-
-.titulo-principal {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
 .texto-introduccion {
     font-size: 18px;
     margin-bottom: 20px;
@@ -296,19 +283,7 @@ header .navbar-nav .nav-link.active {
     margin-bottom: 15px;
 }
 
-.titulo-terciario {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
 /*contenido secundario*/
-.contenido-secundario {
-    padding: 40px;
-    background-color: #232529;
-    gap: 20px;
-    display: flex;
-    align-items: center;
-}
 
 .contenido-secundario ul {
     list-style: disc;
@@ -328,30 +303,6 @@ header .navbar-nav .nav-link.active {
 }
 
 /*estilos de la pagina de agentes*/
-.pagina-agentes .contenido-principal {
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-    gap: 20px;
-}
-
-.contenedor-agentes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.tarjeta-agente {
-    background-color: #1A1D24;
-    padding: 25px;
-    border-radius: 8px;
-    width: 280px;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    justify-content: space-between;
-}
-
 .lista-roles {
     list-style: none;
     display: flex;
@@ -361,14 +312,6 @@ header .navbar-nav .nav-link.active {
     color: #FF4655;
     padding-left: 20px;
 }
-
-.imagen-agente {
-    width: 100%;
-    height: 250px;
-    object-fit: contain;
-    border-radius: 4px;
-}
-
 .rol-agente {
     font-size: 22px;
     margin-bottom: 5px;
@@ -376,9 +319,6 @@ header .navbar-nav .nav-link.active {
 }
 
 /*estilos de la pagina de estrategias*/
-.intro-estrategia {
-    grid-area: estrategias;
-}
 
 .tarjeta-comunicacion {
     grid-area: comunicacion;
@@ -424,11 +364,10 @@ header .navbar-nav .nav-link.active {
     padding: 20px;
 }
 
-/* ==========================================
-   REQUISITOS PRE-ENTREGA 5: ANIMACIONES & ACCESIBILIDAD
-   ========================================== */
+/*Estilos de la seccion de mapas */
 
-/* 1. Animación con @keyframes de más de dos pasos (Flotación) */
+
+/* Animación con @keyframes de más de dos pasos (Flotación) */
 @keyframes entradaSuave {
     0% {
         opacity: 0;
@@ -446,11 +385,6 @@ header .navbar-nav .nav-link.active {
 .animar-entrada {
     animation: entradaSuave 1.2s ease-out forwards;
 }
-
-.banner-animado {
-    animation: flotarValo 3s ease-in-out infinite;
-}
-
 /* Transición suave sobre cambio de estado para cards y botones */
 .card-valohub,.btn-primary,.btn-valohub {
     transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
