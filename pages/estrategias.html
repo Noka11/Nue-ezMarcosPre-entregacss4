@@ -60,68 +60,133 @@
                 </div>
             </nav>
         </header>
-     <main class="contenedor-estrategia flex-grow-1 container my-5">
-        <!-- 1. INTRODUCCIÓN CENTRADA Y EQUILIBRADA -->
-        <div class="row justify-content-center mb-5" data-aos="fade-down" data-aos-duration="1000">
-            <div class="col-12 col-lg-8 text-center">
-                <h1 class="fw-bold text-white display-5 mb-3">Estrategias</h1>
-                <p class="text-light opacity-75 fs-5">En ValoHub vas a encontrar estrategias y consejos para mejorar tu forma de jugar Valorant, tanto de manera individual como en equipo.</p>
-            </div>
-        </div>
+     <main class="container my-5">
 
-        <!-- 2. GRILLA DE COMUNICACIÓN Y CONTROL -->
-        <div class="row g-4 mb-5">
-            <!-- Tarjeta Comunicación -->
-            <div class="col-12 col-lg-6" data-aos="fade-right" data-aos-duration="1000">
-                <section class="tarjeta-comunicacion card bg-dark text-white border-valohub h-100 p-4 shadow">
-                    <h2 class="h4 fw-bold text-danger mb-3">Comunicación y trabajo en equipo</h2>
-                    <p class="text-light opacity-75">La comunicación es una parte fundamental de Valorant. Compartir información sobre la posición de los enemigos, las habilidades utilizadas y las decisiones del equipo puede marcar la diferencia durante una ronda.</p>
-                    <ul class="text-light opacity-75 mb-0">
-                        <li>Comunicar la posición de los enemigos.</li>
-                        <li>Informar cuando un enemigo utiliza una habilidad importante.</li>
-                        <li>Coordinar ataques y retakes con el equipo.</li>
-                        <li>Evitar dar información innecesaria durante la ronda.</li>
-                    </ul>
-                </section>
+        <!-- 1. CABECERA (mismo patrón que mapas.html) -->
+        <section class="text-center mb-5" data-aos="fade-down">
+            <span class="badge badge-cian mb-3">Táctica &amp; trabajo en equipo</span>
+            <h1 class="display-5 fw-bold text-white mb-3">Guía de Estrategias</h1>
+            <p class="text-light mx-auto cabecera-texto">En ValoHub vas a encontrar estrategias y consejos para mejorar
+                tu forma de jugar Valorant, tanto de manera individual como en equipo.</p>
+        </section>
+
+        <!-- 2. FUNDAMENTOS: dos cards lado a lado -->
+        <section class="mb-5">
+            <div class="mb-4">
+                <span class="badge badge-rojo mb-2">Fundamentos</span>
+                <h2 class="h3 text-white">Las bases de cada ronda</h2>
             </div>
 
-            <!-- Tarjeta Control del Mapa -->
-            <div class="col-12 col-lg-6" data-aos="fade-left" data-aos-duration="1000">
-                <section class="tarjeta-control card bg-dark text-white border-valohub h-100 p-4 shadow">
-                    <h2 class="h4 fw-bold text-danger mb-3">Control del mapa</h2>
-                    <p class="text-light opacity-75">Controlar diferentes zonas del mapa permite obtener información y generar espacio para que el equipo pueda ejecutar sus jugadas.</p>
-                    <ul class="text-light opacity-75 mb-0">
-                        <li>Buscar información antes de realizar una ejecución.</li>
-                        <li>Controlar zonas importantes del mapa.</li>
-                        <li>Utilizar las habilidades para bloquear o limitar espacios.</li>
-                        <li>Adaptarse a los movimientos del equipo enemigo.</li>
-                    </ul>
-                </section>
-            </div>
-        </div>
-
-        <!-- 3. DIAGRAMA TÁCTICO -->
-        <section class="diagrama-tactico card bg-dark text-white border-valohub p-4 p-lg-5 shadow-lg mb-5" data-aos="fade-up" data-aos-duration="1000">
-            <div class="row align-items-center g-4">
-                <div class="col-lg-5 text-center">
-                    <figure class="mb-0">
-                        <img src="../assets/img/diagrama-tactico.png" class="img-fluid rounded border border-secondary shadow" alt="Diagrama táctico de estrategia">
-                        <figcaption class="text-muted small mt-2">Diagrama táctico de estrategia</figcaption>
-                    </figure>
+            <div class="row g-4">
+                <div class="col-12 col-md-6" data-aos="fade-up">
+                    <article class="card card-valohub tarjeta-estrategia h-100">
+                        <div class="card-body d-flex flex-column">
+                            <span class="numero-fondo" aria-hidden="true">01</span>
+                            <span class="badge badge-rojo mb-2 w-auto me-auto">Equipo</span>
+                            <h3 class="card-title h5">Comunicación y trabajo en equipo</h3>
+                            <p class="card-text">La comunicación es una parte fundamental de Valorant. Compartir
+                                información sobre la posición de los enemigos, las habilidades utilizadas y las
+                                decisiones del equipo puede marcar la diferencia durante una ronda.</p>
+                            <ul class="lista-tactica list-unstyled mb-0 mt-auto">
+                                <li>Comunicar la posición de los enemigos.</li>
+                                <li>Informar cuando un enemigo utiliza una habilidad importante.</li>
+                                <li>Coordinar ataques y retakes con el equipo.</li>
+                                <li>Evitar dar información innecesaria durante la ronda.</li>
+                            </ul>
+                        </div>
+                    </article>
                 </div>
-                <div class="col-lg-7">
-                    <div class="detalles-tacticos">
-                        <h3 class="fw-bold text-white mb-3">Despliegue Táctico 5-Stack</h3>
-                        <p class="text-light opacity-75">Esta formación aprovecha la combinación de los 5 agentes para dominar las 3 zonas del mapa antes de definir la entrada al sitio A:</p>
-                        <ul class="text-light opacity-75 ps-3">
-                            <li class="mb-2"><strong>Bloque de Ataque A Main (Sova, Jett, Phoenix):</strong> Grupo de choque principal. Sova revela la posición de los defensores en A, permitiendo que Jett y Phoenix abran el sitio con sus habilidades de entrada (dashes y flashes) para asegurar el sitio y plantar la Spike.</li>
-                            <li class="mb-2"><strong>Control de Mid (Omen):</strong> Avanza por el centro del mapa colocando un humo estratégico en la zona de Catwalk / Tree. Esto bloquea la visión de los defensores en Mid y evita que disparen al grupo de A desde el lateral.</li>
-                            <li><strong>Lurker en B (Cypher):</strong> Se posiciona en B Lobby / B Main para escuchar las rotaciones enemigas, evitar que los defensores empujen por la espalda y castigar si el equipo rival abandona el sitio B por completo.</li>
-                        </ul>
-                    </div>
+
+                <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="150">
+                    <article class="card card-valohub tarjeta-estrategia h-100">
+                        <div class="card-body d-flex flex-column">
+                            <span class="numero-fondo" aria-hidden="true">02</span>
+                            <span class="badge badge-cian mb-2 w-auto me-auto">Mapa</span>
+                            <h3 class="card-title h5">Control del mapa</h3>
+                            <p class="card-text">Controlar diferentes zonas del mapa permite obtener información y
+                                generar espacio para que el equipo pueda ejecutar sus jugadas.</p>
+                            <ul class="lista-tactica list-unstyled mb-0 mt-auto">
+                                <li>Buscar información antes de realizar una ejecución.</li>
+                                <li>Controlar zonas importantes del mapa.</li>
+                                <li>Utilizar las habilidades para bloquear o limitar espacios.</li>
+                                <li>Adaptarse a los movimientos del equipo enemigo.</li>
+                            </ul>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
+
+        <!-- 3. CARD DESTACADA: diagrama + pasos (mismo patrón que la card de Summit) -->
+        <section class="mb-5" data-aos="fade-up">
+            <article class="card card-valohub estrategia-destacada overflow-hidden">
+                <div class="row g-0 align-items-center">
+
+                    <div class="col-12 col-lg-6 p-3 p-lg-4" data-aos="fade-right" data-aos-delay="150">
+                        <figure class="diagrama mb-0">
+                            <img src="../assets/img/diagrama-tactico.png" class="img-fluid rounded"
+                                alt="Diagrama táctico con las rutas de cada agente sobre el mapa">
+                            <figcaption class="pie-diagrama text-center mt-2">Diagrama táctico de estrategia
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12 col-lg-6 p-4 p-lg-5">
+                        <span class="badge badge-rojo mb-2">Destacado</span>
+                        <h2 class="h3 text-white mb-3">Despliegue táctico 5-Stack</h2>
+                        <p class="card-text mb-3">Esta formación aprovecha la combinación de los 5 agentes para
+                            dominar las 3 zonas del mapa antes de definir la entrada al sitio A.</p>
+
+                        <div class="d-flex flex-wrap gap-2 mb-3">
+                            <span class="chip-dato"><strong>5</strong> agentes</span>
+                            <span class="chip-dato"><strong>3</strong> zonas</span>
+                            <span class="chip-dato"><strong>A</strong> sitio objetivo</span>
+                        </div>
+
+                        <ol class="list-unstyled mb-0">
+                            <li class="paso">
+                                <span class="paso-num">1</span>
+                                <div>
+                                    <h3>Bloque de ataque A Main · Sova, Jett, Phoenix</h3>
+                                    <p>Grupo de choque principal. Sova revela la posición de los defensores en A,
+                                        permitiendo que Jett y Phoenix abran el sitio con sus habilidades de entrada
+                                        (dashes y flashes) para asegurar el sitio y plantar la Spike.</p>
+                                </div>
+                            </li>
+                            <li class="paso">
+                                <span class="paso-num">2</span>
+                                <div>
+                                    <h3>Control de Mid · Omen</h3>
+                                    <p>Avanza por el centro del mapa colocando un humo estratégico en la zona de
+                                        Catwalk / Tree. Esto bloquea la visión de los defensores en Mid y evita que
+                                        disparen al grupo de A desde el lateral.</p>
+                                </div>
+                            </li>
+                            <li class="paso">
+                                <span class="paso-num">3</span>
+                                <div>
+                                    <h3>Lurker en B · Cypher</h3>
+                                    <p>Se posiciona en B Lobby / B Main para escuchar las rotaciones enemigas, evitar
+                                        que los defensores empujen por la espalda y castigar si el equipo rival
+                                        abandona el sitio B por completo.</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+
+                </div>
+            </article>
+        </section>
+
+        <!-- 4. CIERRE: llamada a la acción -->
+        <section class="text-center" data-aos="fade-up">
+            <h2 class="h4 text-white mb-2">Ponelo en práctica</h2>
+            <p class="text-light mb-4">Elegí un mapa y un grupo de agentes, y probá esta formación en tu próxima partida.
+            </p>
+            <a href="mapas.html" class="btn btn-valohub me-2">Ver mapas</a>
+            <a href="agentes.html" class="btn btn-valohub-rojo">Ver agentes</a>
+        </section>
+
     </main>
 
     <!-- FOOTER ANCLADO AL FONDO -->

@@ -394,20 +394,137 @@ header .navbar-nav .nav-link.active {
     transform: translateY(-5px) scale(1.02);
 }
 
-/* Media Queries Responsive (Cierre para Tablets y Desktop) */
-@media (min-width: 768px) {
-    .contenedor-estrategia {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-            "estrategias comunicacion"
-            "control tactico";
-    }
-}
-
 @media (min-width: 992px) {
     .carousel-item {
         height: 580px;
     }
+}
+/* ==========================================
+   PÁGINA DE ESTRATEGIAS
+   (pegar al final de style.css, antes del bloque de prefers-reduced-motion)
+   ========================================== */
+
+/* Cabecera */
+.cabecera-texto {
+    max-width: 680px;
+}
+
+/* Cards de fundamentos */
+.tarjeta-estrategia .card-body {
+    position: relative;
+    padding: 1.5rem;
+}
+
+/* Número grande y tenue detrás del título */
+.numero-fondo {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+    user-select: none;
+}
+
+/* Línea cian bajo el título que se estira al pasar el mouse */
+.tarjeta-estrategia .card-title::after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 2px;
+    margin-top: 0.6rem;
+    background-color: #00ECE6;
+    transform-origin: left;
+    transition: transform 0.3s ease-out;
+}
+
+.tarjeta-estrategia:hover .card-title::after {
+    transform: scaleX(2);
+}
+
+/* Lista con marcador cian en lugar del punto por defecto */
+.lista-tactica li {
+    position: relative;
+    padding-left: 1.4rem;
+    margin-bottom: 0.6rem;
+    color: #E2E8F0;
+    font-size: 0.95rem;
+}
+
+.lista-tactica li::before {
+    content: "›";
+    position: absolute;
+    left: 0;
+    color: #00ECE6;
+    font-weight: 700;
+}
+
+/* Card destacada */
+.estrategia-destacada {
+    border-left: 4px solid #FF4655;
+}
+
+/* La card grande no se eleva ni se agranda al pasar el mouse */
+.estrategia-destacada:hover {
+    transform: none;
+}
+
+.diagrama img {
+    border: 1px solid rgba(255, 70, 85, 0.6);
+}
+
+.pie-diagrama {
+    color: #A0AEC0;
+    font-size: 0.85rem;
+}
+
+/* Datos rápidos (chips) */
+.chip-dato {
+    border: 1px solid rgba(0, 236, 230, 0.4);
+    border-radius: 4px;
+    padding: 0.3rem 0.7rem;
+    color: #A0AEC0;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.chip-dato strong {
+    margin-right: 0.25rem;
+    color: #00ECE6;
+    font-size: 1rem;
+}
+
+/* Pasos numerados */
+.paso {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.paso-num {
+    flex: 0 0 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    border: 1px solid #00ECE6;
+    border-radius: 4px;
+    color: #00ECE6;
+    font-weight: 700;
+}
+
+.paso h3 {
+    margin-bottom: 0.25rem;
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+.paso p {
+    margin-bottom: 0;
+    color: #A0AEC0;
+    font-size: 0.9rem;
 }
 
 /* 4. Accesibilidad Obligatoria: Desactiva animaciones si el usuario lo prefiere */

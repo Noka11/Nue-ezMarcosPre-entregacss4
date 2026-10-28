@@ -1,9 +1,0 @@
-# Ignorar dependencias de Node
-node_modules/
-
-# Ignorar la carpeta de Sass 
-sass/
-
-# Si tenés archivos de registro o caché de compilación
-*.log
-.DS_Store
