@@ -1,0 +1,22 @@
+
+@use "base/reset";
+@use "base/base";
+@use "base/tipografia";
+
+@use "layout/header";
+@use "layout/footer";
+@use "layout/nav";
+
+@use "components/cards";
+@use "components/buttons";
+@use "components/badges";
+@use "components/carousel";
+
+@use "pages/agentes";
+@use "pages/esports";
+@use "pages/estrategias";
+@use "pages/index";
+@use "pages/mapas";
+@use "pages/parches";
+
+@use "utilities/animatios";

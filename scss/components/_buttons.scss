@@ -1,0 +1,32 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+/* Botones con estilo */
+.btn-valohub {
+    @include boton-base;
+    @include transicion-elevacion;
+    background-color: transparent;
+    border: 1px solid $color-cian;
+    color: $color-cian;
+
+    &:hover {
+        background-color: $color-cian;
+        color: $color-fondo;
+        box-shadow: 0 0 12px rgba($color-cian, 0.4);
+    }
+
+}
+
+.btn-valohub-rojo {
+    @include boton-base;
+    background-color: $color-rojo;
+    color: $color-blanco;
+    border: none;
+    transition: all $duracion-base ease;
+
+    &:hover {
+        background-color: $color-rojo-oscuro;
+        color: $color-blanco;
+        box-shadow: 0 0 15px rgba($color-rojo, 0.5);
+    }
+}

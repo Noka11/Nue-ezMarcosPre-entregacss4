@@ -1,0 +1,7 @@
+@use "../utilities/variables" as *;
+
+body {
+    color: $color-texto;
+    background-color: $color-fondo;
+    margin: 0;
+    }

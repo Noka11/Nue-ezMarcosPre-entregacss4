@@ -1,541 +1,237 @@
-/*estilos generales*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    color: #F5F5F5;
-    background-color: #0F1115;
-    margin: 0;
-    font-family: "Anta", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-/*transiciones globales para elementos interactivos*/
-a,
-.btn,
-.nav-link,
-.card,
-.dropdown-item {
-    transition: all 0.3s ease;
+  color: #F5F5F5;
+  background-color: #0F1115;
+  margin: 0;
 }
 
-/*estilos de la barra de navegacion*/
+body {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .logo {
-    max-width: 200px;
-    height: auto;
+  max-width: 200px;
+  height: auto;
 }
 
 header .navbar {
-    background-color: #0F1115;
-    border-bottom: 2px solid #FF4655;
-    padding: 10px 20px;
+  background-color: #0F1115;
+  border-bottom: 2px solid #FF4655;
+  padding: 0.5rem 1.5rem;
 }
 
 .navbar-brand .logo {
-    max-width: 150px;
-    height: auto;
+  max-width: 150px;
+  height: auto;
 }
 
-/*selectores especificos para los links del menu*/
+.pie-pagina {
+  background-color: #0F1115;
+  color: #F5F5F5;
+  text-align: center;
+  padding: 2.5;
+  margin-top: 3rem;
+}
+
 header .navbar-nav .nav-link {
-    color: #FF4655;
-    font-size: 1rem;
-    font-weight: 600;
+  color: #FF4655;
+  font-size: 1rem;
+  font-weight: 600;
 }
-
-/* Contenedor del menú desplegable */
-.dropdown-menu {
-    background-color: #161920;
-    border: 1px solid rgba(255, 70, 85, 0.4);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
-    border-radius: 8px;
-    padding: 0.5rem 0;
-    margin-top: 0.5rem !important;
-}
-
-/* Opciones individuales del menú */
-.dropdown-item {
-    color: #E2E8F0;
-    font-family: 'Anta', sans-serif;
-    font-size: 0.95rem;
-    padding: 0.5rem 1.2rem;
-    transition: all 0.2s ease;
-    text-transform: capitalize;
-}
-
-/* Estado hover*/
-.dropdown-item:hover,
-.dropdown-item:focus {
-    background-color: rgba(255, 70, 85, 0.2);
-    color: #00ECE6;
-}
-
-/* Línea divisoria dentro del dropdown*/
-.dropdown-divider {
-    border-color: rgba(255, 255, 255, 0.1);
-}
-
-/*estados interactivos limpios*/
 header .navbar-nav .nav-link.active {
-    transform: translateY(0);
-    color: #FFFFFF;
-    border-bottom: 2px solid #00ECE6;
-    font-weight: 700;
-    text-shadow: 0 0 8px rgba(0, 236, 230, 0.4);
+  transform: translateY(0);
+  color: #FFFFFF;
+  border-bottom: 2px solid #00ECE6;
+  font-weight: 700;
+  text-shadow: 0 0 8px rgba(0, 236, 230, 0.4);
 }
 
-/*contenido principal*/
-.contenido-principal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px;
-    gap: 40px;
-    background-color: #232529;
+.dropdown-menu {
+  background-color: #161920;
+  border: 1px solid rgba(255, 70, 85, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem !important;
 }
 
-.carousel {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    margin-top: 0;
-    margin-bottom: 3rem;
-    border-radius: 0;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
-    border-bottom: 3px solid #FF4655;
+.dropdown-item {
+  color: #E2E8F0;
+  font-family: "Anta", sans-serif;
+  font-size: 0.95rem;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.2s ease;
+  text-transform: capitalize;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color: rgba(255, 70, 85, 0.2);
+  color: #00ECE6;
 }
 
-.carousel-item {
-
-    height: 520px;
-    background-color: #0F1115;
-    position: relative;}
-.carousel-item::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgba(15, 17, 21, 0.5);
-    z-index: 1;
+.dropdown-divider {
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
-.carousel-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.carousel .carousel-caption {
-    z-index: 2;
-    top: 50%;
-    left: 50%;
-    bottom: auto;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    padding: 0;
-    font-family: 'Anta', sans-serif;
-    text-align: center;
-}
-
-.carousel .carousel-caption h5 {
-    color: #FFFFFF;
-    font-size: 3.5rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    line-height: 1.1;
-    margin-bottom: 1rem;
-    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.9);
-}
-
-.carousel .carousel-caption p {
-    color: #E2E8F0;
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
-    margin-bottom: 0;
-}
-
-/* Controles e indicadores */
- .carousel-control-prev,
-.carousel-control-next {
-    width: 7%;
-    transition: background-color 0.3s ease;
-    z-index: 3;
-}
-
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-    background: rgba(255, 70, 85, 0.25);
-}
-
-.carousel-indicators {
-    z-index: 3;
-    bottom: 1.5rem;
-}
-
-.titulo-seccion {
-    font-family: 'Anta', sans-serif;
-    color: #00ECE6;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-/* Estilo para las Cards */
 .card-valohub {
-    background-color: #161920;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    color: #FFFFFF;
-    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #161920;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #FFFFFF;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
 }
-
 .card-valohub:hover {
-    transform: translateY(-5px);
-    border-color: #FF4655;
-    box-shadow: 0 8px 20px rgba(255, 70, 85, 0.25);
+  transform: translateY(-5px);
+  border-color: #FF4655;
+  box-shadow: 0 8px 20px rgba(255, 70, 85, 0.25);
 }
-
 .card-valohub .card-img-top {
-    height: 280px;
-    object-fit: cover;
-    object-position: center top;
-    background-color: #0B0E14;
+  height: 280px;
+  object-fit: cover;
+  object-position: center top;
+  background-color: #0B0E14;
 }
-
 .card-valohub .card-title {
-    font-family: 'Anta', sans-serif;
-    color: #FFFFFF;
+  font-family: "Anta", sans-serif;
+  color: #FFFFFF;
 }
-
 .card-valohub .card-text {
-    color: #A0AEC0;
-    font-size: 0.95rem;
-}
-
-/* Badges / Etiquetas */
-.badge-rojo {
-    background-color: #FF4655;
-    color: #FFF;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-}
-
-.badge-cian {
-    background-color: #00ECE6;
-    color: #0F1115;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    font-weight: bold;
+  color: #A0AEC0;
+  font-size: 0.95rem;
 }
 
 /* Botones con estilo */
 .btn-valohub {
-    background-color: transparent;
-    border: 1px solid #00ECE6;
-    color: #00ECE6;
-    font-family: 'Anta', sans-serif;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
+  font-family: "Anta", sans-serif;
+  text-transform: uppercase;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  background-color: transparent;
+  border: 1px solid #00ECE6;
+  color: #00ECE6;
 }
-
 .btn-valohub:hover {
-    background-color: #00ECE6;
-    color: #0F1115;
-    box-shadow: 0 0 12px rgba(0, 236, 230, 0.4);
+  background-color: #00ECE6;
+  color: #0F1115;
+  box-shadow: 0 0 12px rgba(0, 236, 230, 0.4);
 }
 
 .btn-valohub-rojo {
-    background-color: #FF4655;
-    color: #FFFFFF;
-    font-family: 'Anta', sans-serif;
-    text-transform: uppercase;
-    border: none;
-    transition: all 0.3s ease;
+  font-family: "Anta", sans-serif;
+  text-transform: uppercase;
+  background-color: #FF4655;
+  color: #FFFFFF;
+  border: none;
+  transition: all 0.3s ease;
 }
-
 .btn-valohub-rojo:hover {
-    background-color: #E03E4C;
-    color: #FFFFFF;
-    box-shadow: 0 0 15px rgba(255, 70, 85, 0.5);
+  background-color: #E03E4C;
+  color: #FFFFFF;
+  box-shadow: 0 0 15px rgba(255, 70, 85, 0.5);
 }
 
-/* Banner de actualización */
-.banner-destacado {
-    background: linear-gradient(135deg, #161920 0%, #0F1115 100%);
-    border: 1px solid rgba(0, 236, 230, 0.3);
-}
-.texto-introduccion {
-    font-size: 18px;
-    margin-bottom: 20px;
+.badge-rojo {
+  font-size: 0.75;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #FF4655;
+  color: #FFFFFF;
 }
 
-.titulo-secundario {
-    font-size: 28px;
-    margin-bottom: 15px;
+.badge-cian {
+  font-size: 0.75;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #00ECE6;
+  color: #0F1115;
 }
 
-/*contenido secundario*/
-
-.contenido-secundario ul {
-    list-style: disc;
-    padding-left: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.carousel {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
+  border-bottom: 3px solid #FF4655;
+}
+.carousel .carousel-caption {
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  padding: 0;
+  font-family: "Anta", sans-serif;
+  text-align: center;
+}
+.carousel h5 {
+  color: #FFFFFF;
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.9);
+}
+.carousel p {
+  color: #E2E8F0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+  margin-bottom: 0;
 }
 
-/*pie de pagina*/
-.pie-pagina {
-    background-color: #0F1115;
-    color: #F5F5F5;
-    text-align: center;
-    padding: 40px;
-    margin-top: 50px;
+.carousel-item {
+  height: 520px;
+  background-color: #0F1115;
+  position: relative;
 }
-
-/*estilos de la pagina de agentes*/
-.lista-roles {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    font-size: 20px;
-    color: #FF4655;
-    padding-left: 20px;
+.carousel-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 17, 21, 0.5);
+  z-index: 1;
 }
-.rol-agente {
-    font-size: 22px;
-    margin-bottom: 5px;
-    color: #FF4655;
-}
-
-/*estilos de la pagina de estrategias*/
-
-.tarjeta-comunicacion {
-    grid-area: comunicacion;
-}
-
-.tarjeta-control {
-    grid-area: control;
-}
-
-.diagrama-tactico {
-    grid-area: tactico;
-    background-color: #1f2326;
-    padding: 20px;
-    border-radius: 8px;
-    border-left: 4px solid #FF4655;
-    min-width: 0;
-}
-
-.diagrama-tactico figure {
-    margin: 0;
-    text-align: center;
-}
-
-.diagrama-tactico img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-    border-radius: 8px;
-    border: 1px solid #FF4655;
-}
-
-.contenedor-estrategia {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "estrategias"
-        "comunicacion"
-        "control"
-        "tactico";
-    gap: 20px;
-    padding: 20px;
-}
-
-/*Estilos de la seccion de mapas */
-
-
-/* Animación con @keyframes de más de dos pasos (Flotación) */
-@keyframes entradaSuave {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    50% {
-        opacity: 0.6;
-        transform: translateY(10px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-.animar-entrada {
-    animation: entradaSuave 1.2s ease-out forwards;
-}
-/* Transición suave sobre cambio de estado para cards y botones */
-.card-valohub,.btn-primary,.btn-valohub {
-    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
-}
-
-.card-valohub:hover {
-    transform: translateY(-5px) scale(1.02);
-}
-
 @media (min-width: 992px) {
-    .carousel-item {
-        height: 580px;
-    }
-}
-/* ==========================================
-   PÁGINA DE ESTRATEGIAS
-   (pegar al final de style.css, antes del bloque de prefers-reduced-motion)
-   ========================================== */
-
-/* Cabecera */
-.cabecera-texto {
-    max-width: 680px;
+  .carousel-item {
+    height: 580px;
+  }
 }
 
-/* Cards de fundamentos */
-.tarjeta-estrategia .card-body {
-    position: relative;
-    padding: 1.5rem;
+.carousel-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-/* Número grande y tenue detrás del título */
-.numero-fondo {
-    position: absolute;
-    top: 0.5rem;
-    right: 1rem;
-    font-size: 4.5rem;
-    font-weight: 700;
-    line-height: 1;
-    color: rgba(255, 255, 255, 0.05);
-    pointer-events: none;
-    user-select: none;
+.carousel-control-prev,
+.carousel-control-next {
+  width: 7%;
+  transition: 0.3s ease;
+  z-index: 3;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background: rgba(255, 70, 85, 0.25);
 }
 
-/* Línea cian bajo el título que se estira al pasar el mouse */
-.tarjeta-estrategia .card-title::after {
-    content: "";
-    display: block;
-    width: 48px;
-    height: 2px;
-    margin-top: 0.6rem;
-    background-color: #00ECE6;
-    transform-origin: left;
-    transition: transform 0.3s ease-out;
-}
-
-.tarjeta-estrategia:hover .card-title::after {
-    transform: scaleX(2);
-}
-
-/* Lista con marcador cian en lugar del punto por defecto */
-.lista-tactica li {
-    position: relative;
-    padding-left: 1.4rem;
-    margin-bottom: 0.6rem;
-    color: #E2E8F0;
-    font-size: 0.95rem;
-}
-
-.lista-tactica li::before {
-    content: "›";
-    position: absolute;
-    left: 0;
-    color: #00ECE6;
-    font-weight: 700;
-}
-
-/* Card destacada */
-.estrategia-destacada {
-    border-left: 4px solid #FF4655;
-}
-
-/* La card grande no se eleva ni se agranda al pasar el mouse */
-.estrategia-destacada:hover {
-    transform: none;
-}
-
-.diagrama img {
-    border: 1px solid rgba(255, 70, 85, 0.6);
-}
-
-.pie-diagrama {
-    color: #A0AEC0;
-    font-size: 0.85rem;
-}
-
-/* Datos rápidos (chips) */
-.chip-dato {
-    border: 1px solid rgba(0, 236, 230, 0.4);
-    border-radius: 4px;
-    padding: 0.3rem 0.7rem;
-    color: #A0AEC0;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-}
-
-.chip-dato strong {
-    margin-right: 0.25rem;
-    color: #00ECE6;
-    font-size: 1rem;
-}
-
-/* Pasos numerados */
-.paso {
-    display: flex;
-    gap: 1rem;
-    padding: 1rem 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.paso-num {
-    flex: 0 0 2rem;
-    height: 2rem;
-    display: grid;
-    place-items: center;
-    border: 1px solid #00ECE6;
-    border-radius: 4px;
-    color: #00ECE6;
-    font-weight: 700;
-}
-
-.paso h3 {
-    margin-bottom: 0.25rem;
-    color: #FFFFFF;
-    font-size: 1rem;
-}
-
-.paso p {
-    margin-bottom: 0;
-    color: #A0AEC0;
-    font-size: 0.9rem;
-}
-
-/* 4. Accesibilidad Obligatoria: Desactiva animaciones si el usuario lo prefiere */
-@media (prefers-reduced-motion: reduce) {
-
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
+.carousel-indicators {
+  z-index: 3;
+  bottom: 1.2rem;
 }

@@ -1,0 +1,14 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.badge-rojo {
+    @include badge;
+    background-color: $color-rojo;
+    color: $color-blanco;
+}
+
+.badge-cian {
+    @include badge;
+    background-color: $color-cian;
+    color: $color-fondo;
+}

@@ -1,0 +1,94 @@
+    @use "../utilities/variables" as *;
+
+    .carousel {
+
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        margin-top: 0;
+        margin-bottom: $espaciado-xl;
+        border-radius: 0;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba($color-negro, 0.9);
+        border-bottom: 3px solid $color-rojo;
+
+        .carousel-caption {
+            z-index: 2;
+            top: 50%;
+            left: 50%;
+            bottom: auto;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            padding: 0;
+            font-family: $fuente-principal;
+            text-align: center;
+        }
+
+        h5 {
+            color: $color-blanco;
+            font-size: $tamano-hero-titulo;
+            font-weight: $peso-extranegrita;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            line-height: $espaciado-sd;
+            margin-bottom: $tamano-base;
+            text-shadow: 0 4px 15px rgba($color-negro, 0.9);
+        }
+
+        p {
+            color: $color-texto-suave;
+            font-size: $tamano-hero-texto;
+            font-weight: $peso-seminegrita;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 8px rgba($color-negro, 0.9);
+            margin-bottom: 0;
+        }
+    }
+
+    .carousel-item {
+        height: 520px;
+        background-color: $color-fondo;
+        position: relative;
+
+
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba($color-fondo, 0.5);
+            z-index: 1;
+        }
+
+
+        @media (min-width: 992px) {
+            height: 580px;
+        }
+    }
+
+
+    .carousel-img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 7%;
+        transition: $duracion-base ease;
+        z-index: 3;
+
+        &:hover {
+            background: rgba($color-rojo, 0.25);
+        }
+    }
+
+    .carousel-indicators {
+        z-index: 3;
+        bottom: $tamano-hero-texto;
+    }
