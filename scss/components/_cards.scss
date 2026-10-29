@@ -8,6 +8,7 @@
      @include transicion-elevacion;
     &:hover {
         transform: translateY(-5px);
+        scale: 1.02;
         border-color: $color-rojo;
         box-shadow: 0 8px 20px rgba($color-rojo, 0.25);
     }

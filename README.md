@@ -1,48 +1,26 @@
-# 🎮 ValoHub | Portal de Valorant & Esports
+# ValoHub 🚀 - Portal de Valorant
 
-**ValoHub** es un portal web interactivo diseñado para la comunidad de Valorant, centralizando información sobre agentes, mapas, estrategias tácticas y notas del parche del circuito competitivo VCT. Proyecto desarrollado en el marco de la carrera de Desarrollo Web en Coderhouse.
+Proyecto web modular enfocado en esports y estrategias de Valorant, desarrollado en el marco del diploma de desarrollo web de Coderhouse.
 
----
+## 📌 Estado de la Preentrega (Rama: `feature/preentrega-6-sass`)
 
-## ✨ Características Principales (Pre-Entrega 5)
+### 🛠️ Lo que se implementó en esta versión:
+* **Arquitectura y Modularización SCSS:**
+  * Reorganización completa de la arquitectura de archivos en carpetas modulares (`scss/components/`, `scss/pages/`, `scss/utilities/`).
+  * Estandarización de variables, mixins y corrección de nomenclatura de archivos (`_animaciones.scss`, `_variables.scss`).
+  * Compilación y limpieza en el archivo final de estilos (`style/style.css`).
 
-* **Animaciones y Transiciones Fluidas:** Implementación de animaciones personalizadas mediante `@keyframes` y efectos interactivos en elementos de navegación y tarjetas (`hover` con elevación y sombras de neón).
-* **Librería AOS (Animate On Scroll):** Integración de animaciones al hacer scroll para un despliegue visual elegante en las distintas secciones.
-* **Diseño 100% Responsivo:** Maquetación adaptada para dispositivos móviles, tablets y escritorios utilizando Flexbox, CSS Grid y componentes avanzados de Bootstrap 5.
-* **Accesibilidad Web:** Incorporación de la regla `@media (prefers-reduced-motion: reduce)` para respetar las preferencias de movimiento del sistema del usuario.
+* **Diseño y Maquetación de la Sección de Mapas:**
+  * Implementación de un **Dashboard Táctico** asimétrico integrado con el pool completo de seis mapas (`Summit`, `Haven`, `Bind`, `Lotus`, `Corrode` y `Abyss`).
+  * Creación de un banner destacado para el mapa principal del parche y grillas compactas con efectos de zoom dinámicos y transiciones suaves.
 
----
+* **Optimización en la Sección de Estrategias:**
+  * Estructuración semántica de las guías tácticas de juego en equipo (5-stack), comunicación y control de zonas.
+  * Incorporación de diagramas tácticos y distribución responsiva con Bootstrap 5.
 
-## 🛠️ Tecnologías Utilizadas
-
-* **HTML5** (Estructura semántica)
-* **CSS3 / Sass** (Estilos personalizados, variables y animaciones)
-* **Bootstrap 5** (Sistema de grillas, componentes y utilidades)
-* **AOS Library** (Animaciones de desplazamiento)
-* **Git & GitHub** (Control de versiones y flujo de trabajo mediante ramas)
-
----
-
-## 🚀 Futuras Actualizaciones (Roadmap)
-
-* [ ] **Estilización avanzada de la página de Mapas (`mapas.html`):** Incorporar fichas tácticas detalladas con callouts específicos y grillas interactivas para cada escenario.
-* [ ] **Optimización de la página de Estrategias (`estrategias.html`):** Refinar el diseño de los diagramas tácticos y guías de equipo usando layouts avanzados en CSS Grid.
-* [ ] **Sección de Parches:** Ampliar el historial de notas de actualización con filtros interactivos por versión del juego.
+* **Correcciones Generales:**
+  * Resolución definitiva del anclaje del footer al pie de la página mediante utilidades de Flexbox (`d-flex flex-column min-vh-100`, `flex-grow-1`, `mt-auto`).
+  * Integración de animaciones con AOS (Animate On Scroll) para mejorar la experiencia de usuario.
 
 ---
-
-## 📂 Estructura del Proyecto
-
-```text
-valohub/
-│
-├── index.html
-├── pages/
-│   ├── agentes.html
-│   ├── mapas.html
-│   ├── estrategias.html
-│   └── parches.html
-├── style/
-│   └── style.css
-└── assets/
-    └── img/
+© 2026 ValoHub. Desarrollado por Marcos.
