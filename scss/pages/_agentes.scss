@@ -1,0 +1,29 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.contenido-principal {
+    @include flex-columna ($espaciado-lg);
+    align-items: center;
+    padding: $espaciado-lg;
+    background-color: $color-panel;
+}
+.titulo-secundario {
+    font-size: $tamano-titulo-secundario;
+    margin-bottom: $espaciado-sd;
+}
+.texto-introduccion {
+    font-size: $tamano-intro;
+    margin-bottom: $espaciado-md;
+}
+.lista-roles {
+    @include flex-columna ($espaciado-sd);
+    list-style: none;
+    font-size: $tamano-lista 1.25rem;
+    color: $color-rojo;
+    padding-left: $espaciado-md;
+}
+.rol-agente {
+    font-size: $tamano-lista;
+    margin-bottom: $espaciado-s;
+    color: $color-rojo;
+}

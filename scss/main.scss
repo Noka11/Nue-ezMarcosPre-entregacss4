@@ -2,6 +2,7 @@
 @use "base/reset";
 @use "base/base";
 @use "base/tipografia";
+@use "utilities/animatios";
 
 @use "layout/header";
 @use "layout/footer";
@@ -19,4 +20,3 @@
 @use "pages/mapas";
 @use "pages/parches";
 
-@use "utilities/animatios";

@@ -4,3 +4,9 @@ body {
     font-weight: 400;
     font-style: normal;
     }
+    .titulo-seccion {
+    font-family: $fuente-principal;
+    color: $color-cian;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

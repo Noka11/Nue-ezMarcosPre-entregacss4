@@ -1,0 +1,44 @@
+@use "variables" as *;
+
+.a,
+.btn,
+.nav-link,
+.card,
+.drop-item {
+    $transicion-base: 0.3s ease;
+
+}
+
+/* Animación con @keyframes de más de dos pasos (Flotación) */
+@keyframes entradaSuave {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    50% {
+        opacity: 0.6;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animar-entrada {
+    animation: entradaSuave 1.2s ease-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

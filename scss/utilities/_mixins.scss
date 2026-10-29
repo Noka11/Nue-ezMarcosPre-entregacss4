@@ -13,3 +13,9 @@
 @mixin transicion-elevacion {
  transition: transform $duracion-base $curva-salida, box-shadow $duracion-base $curva-salida;
 }
+
+@mixin flex-columna($separacion) {
+    display: flex;
+    flex-direction: column;
+    gap: $separacion;
+}

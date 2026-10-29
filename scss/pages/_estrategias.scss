@@ -1,0 +1,130 @@
+@use "../utilities/variables" as *;
+
+.cabecera-texto {
+    max-width: 680px;
+}
+
+.tarjeta-estrategia {
+    
+    .card-body {
+        position: relative;
+        padding: $espaciado-sd;
+    }
+
+
+    .card-title {
+    &::after {
+        content: "";
+        display: block;
+        width: 48px;
+        height: 2px;
+        margin-top: 0.6rem;
+        background-color: #00ECE6;
+        transform-origin: left;
+        transition: transform $duracion-base $curva-salida;
+    }
+    }
+
+    &:hover .card-title::after {
+    transform: scaleX(2);
+    }
+}
+
+
+.numero-fondo {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 4.5rem;
+    font-weight: $peso-negrita;
+    line-height: 1;
+    color: rgba($color-blanco, 0.05);
+    pointer-events: none;
+    user-select: none;
+}
+
+.lista-tactica {
+
+    li {
+        position: relative;
+        padding-left: 1.4rem;
+        margin-bottom: 0.6rem;
+        color: $color-texto-suave;
+        font-size: $tamano-chico;
+
+        &::before {
+            content: "›";
+            position: absolute;
+            left: 0;
+            color: $color-cian;
+            font-weight: $peso-negrita;
+        }
+    }
+}
+
+
+.estrategia-destacada {
+    border-left: 4px solid $color-rojo;
+    
+
+    &:hover {
+        transform: none;
+    }
+}
+
+.diagrama {
+    img {
+        border: 1px solid rgba($color-rojo, 0.6);
+    }
+}
+
+.pie-diagrama {
+    color: $color-texto-apagado;
+    font-size: 0.85rem;
+}
+
+.chip-dato {
+    border: 1px solid rgba($color-cian, 0.4);
+    border-radius:$radio-sm;
+    padding: 0.3rem 0.7rem;
+    color: $color-texto-apagado;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+
+    strong {
+        margin-right: 0.25rem;
+        color: $color-cian;
+        font-size: $tamano-base;
+    }
+
+}
+
+.paso {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-top: 1px solid rgba($color-blanco, 0.08);
+
+    h3 {
+        margin-bottom: 0.25rem;
+        color: $color-blanco;
+        font-size: $tamano-base;
+    }
+
+    p {
+        margin-bottom: 0;
+        color:$color-texto-pagado;
+        font-size: $tamano-chico;
+    }
+}
+
+.paso-num {
+    flex: 0 0 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    border: 1px solid $color-cian;
+    border-radius: $radio-sm;
+    color: $color-cian;
+    font-weight: $peso-negrita;
+}
