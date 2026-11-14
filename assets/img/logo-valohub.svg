@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" width="640" height="160" role="img" aria-label="ValoHub">
+  <title>ValoHub</title>
+  <g>
+    <path d="M125.2 35.8 L142.9 46.0 L142.9 114.0 L84.0 148.0 L25.1 114.0 L25.1 46.0 L84.0 12.0 L101.7 22.2" fill="none" stroke="#00ECE6" stroke-width="10" stroke-linejoin="miter" stroke-linecap="butt"/>
+    <path d="M109.2 9.2 L132.7 22.8" fill="none" stroke="#FF4655" stroke-width="10" stroke-linecap="butt"/>
+    <path d="M84.0 39.2 L119.3 59.6 L119.3 100.4 L84.0 120.8 L48.7 100.4 L48.7 59.6 Z" fill="none" stroke="#00ECE6" stroke-width="3" stroke-opacity="0.55" stroke-linejoin="miter"/>
+    <path d="M84 61.6 L102.4 80 L84 98.4 L65.6 80 Z" fill="#FF4655"/>
+  </g>
+  <g transform="translate(196,40) skewX(-8)">
+    <polygon points="0,0 15,0 24,45 33,0 48,0 31,66 17,66" transform="translate(0,0)" fill="#FFFFFF"/>
+    <path d="M6 66 V20 L20 6 H28 L42 20 V66 M6 42 H42" transform="translate(60,0)" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linejoin="miter" stroke-linecap="butt"/>
+    <path d="M6 0 V60 H48" transform="translate(120,0)" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linejoin="miter" stroke-linecap="butt"/>
+    <path d="M6 20 L20 6 H28 L42 20 V46 L28 60 H20 L6 46 Z" transform="translate(180,0)" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linejoin="miter" stroke-linecap="butt"/>
+    <path d="M6 0 V66 M42 0 V66 M6 33 H42" transform="translate(240,0)" fill="none" stroke="#00ECE6" stroke-width="12" stroke-linejoin="miter" stroke-linecap="butt"/>
+    <path d="M6 0 V46 L20 60 H28 L42 46 V0" transform="translate(300,0)" fill="none" stroke="#00ECE6" stroke-width="12" stroke-linejoin="miter" stroke-linecap="butt"/>
+    <path d="M6 6 H29 L42 17 V25 L31 33 H6 M31 33 L44 44 V52 L29 60 H6 M6 0 V66" transform="translate(360,0)" fill="none" stroke="#00ECE6" stroke-width="12" stroke-linejoin="miter" stroke-linecap="butt"/>
+    <polygon points="240,80 408,80 402,88 234,88" fill="#FF4655"/>
+  </g>
+</svg>

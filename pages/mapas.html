@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon-valohub.svg">
 </head>
 
 <body>
@@ -21,7 +22,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
-                    <img class="logo" src="../assets/img/logopagina.jpg" alt="ValoHub logo" />
+                   <img class="logo" src="../assets/img/favicon-valohub.svg" alt="ValoHub logo" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -71,7 +72,7 @@
             </div>
         </section>
         <!-- Grilla de mapas-->
-        <section class="container my-5">
+        <section class="my-5">
             <!-- Título de la sección -->
             <div class="d-flex justify-content-between align-items-end mb-4 pb-2 border-bottom border-secondary"
                 data-aos="fade-down" data-aos-duration="1000">
@@ -88,7 +89,7 @@
                 data-aos="fade-up" data-aos-duration="1000">
                 <div class="row g-0 align-items-center">
                     <div class="col-lg-7 position-relative overflow-hidden">
-                        <img src="../assets/img/summit.webp" class="img-fluid w-100 object-fit-cover hover-zoom"
+                        <img src="../assets/img/summit.webp" class="img-fluid w-100 object-fit-cover hover-zoom mapa-destacado-img"
                             alt="Summit">
                         <span
                             class="badge bg-danger position-absolute top-0 start-0 m-3 px-3 py-2 text-uppercase tracking-wider">Destacado
@@ -100,7 +101,7 @@
                             Control de alturas y enfrentamientos en espacios nevados. Una correcta gestión de los
                             pasillos superiores define la ronda.
                         </p>
-                        <div class="d-flex gap-3">
+                        <div class="d-flex flex-wrap gap-3">
                             <a href="#" class="btn btn-valohub px-4">Ver Callouts</a>
                             <a href="#" class="btn btn-outline-light px-3">Estrategias</a>
                         </div>
@@ -108,13 +109,13 @@
                 </div>
             </div>
 
-            <!-- 2. GRILLA COMPACTA ASÉTRICA PARA EL RESTO DE LOS MAPAS -->
+            <!-- 2. GRILLA COMPACTA PARA EL RESTO DE LOS MAPAS -->
             <div class="row g-4">
 
                 <!-- Mapa: Haven -->
                 <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                     <div class="card card-tactical bg-dark text-white border-valohub h-100 overflow-hidden shadow">
-                        <div class="position-relative overflow-hidden">
+                        <div class="position-relative overflow-hidden mapa-img-caja">
                             <img src="../assets/img/haven.webp" class="w-100 h-100 object-fit-cover hover-zoom"
                                 alt="Haven">
                             <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-3">3 Sites</span>
@@ -131,7 +132,7 @@
                 <!-- Mapa: Bind -->
                 <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                     <div class="card card-tactical bg-dark text-white border-valohub h-100 overflow-hidden shadow">
-                        <div class="position-relative overflow-hidden">
+                        <div class="position-relative overflow-hidden mapa-img-caja">
                             <img src="../assets/img/bind.webp" class="w-100 h-100 object-fit-cover hover-zoom"
                                 alt="Bind">
                             <span class="badge bg-danger position-absolute top-0 end-0 m-3">Sin Mid</span>
@@ -148,7 +149,7 @@
                 <!-- Mapa: Lotus -->
                 <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                     <div class="card card-tactical bg-dark text-white border-valohub h-100 overflow-hidden shadow">
-                        <div class="position-relative overflow-hidden">
+                        <div class="position-relative overflow-hidden mapa-img-caja">
                             <img src="../assets/img/lotus.jpg" class="w-100 h-100 object-fit-cover hover-zoom"
                                 alt="Lotus">
                             <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-3">Puertas
@@ -164,7 +165,7 @@
                 </div>
 
                 <!-- Mapa: Corrode -->
-                <div class="col-12 col-md-6 col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                <div class="col-12 col-lg-6" data-aos="fade-right" data-aos-duration="1000">
                     <div class="card card-tactical bg-dark text-white border-valohub h-100 overflow-hidden shadow">
                         <div class="row g-0 h-100">
                             <div class="col-sm-5 position-relative overflow-hidden">
@@ -183,7 +184,7 @@
                 </div>
 
                 <!-- Mapa: Abyss -->
-                <div class="col-12 col-md-6 col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+                <div class="col-12 col-lg-6" data-aos="fade-left" data-aos-duration="1000">
                     <div class="card card-tactical bg-dark text-white border-valohub h-100 overflow-hidden shadow">
                         <div class="row g-0 h-100">
                             <div class="col-sm-5 position-relative overflow-hidden">
@@ -216,8 +217,10 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
-    </script>
+    AOS.init({
+        disable: () => window.innerWidth < 992
+    });
+</script>
 </body>
 
 </html>
