@@ -1,0 +1,39 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+@use "../utilities/placeholders" as *;
+
+.border-valohub {
+    border: 1px solid rgba($color-blanco, 0.08);
+}
+
+.card-tactical {
+    @extend %tarjeta-interactiva;
+}
+
+.mapa-img-caja {
+    height: $alto-mapa-caja;
+    overflow: hidden;   // para que el zoom no se salga de la caja
+}
+
+.hover-zoom {
+    transition: transform $duracion-base $curva-salida;
+
+    &:hover {
+        transform: scale($zoom-imagen);
+    }
+}
+
+.mapa-destacado-img {
+    min-height: $alto-min-destacado;
+    max-height: $alto-max-destacado;
+    object-fit: cover;
+}
+
+.mapa-img-lateral {
+    height: $alto-mapa-caja;
+
+    @include desde($bp-sm) {
+        height: auto;
+        min-height: $alto-min-lateral;
+    }
+}

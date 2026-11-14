@@ -1,0 +1,8 @@
+@use "../utilities/variables" as *;
+.pie-pagina {
+    background-color: $color-fondo;
+    color: $color-texto;
+    text-align: center;
+    padding: $espaciado-lg;
+    margin-top: $espaciado-xl;
+    } 

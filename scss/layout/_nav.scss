@@ -1,0 +1,49 @@
+@use "../utilities/variables" as *;
+
+header .navbar-nav .nav-link {
+    //estados interactivos limpios//
+
+    color: $color-rojo;
+    font-size: $tamano-base;
+    font-weight: $peso-seminegrita;
+
+    &.active {
+        transform: translateY(0);
+        color: $color-blanco;
+        border-bottom: 2px solid $color-cian;
+        font-weight: $peso-negrita;
+        text-shadow: 0 0 8px rgba($color-cian, 0.4);
+    }
+}
+
+// Contenedor del menú desplegable //
+.dropdown-menu {
+    background-color: $color-superficie;
+    border: 1px solid rgba($color-rojo, 0.4);
+    box-shadow: 0 8px 24px rgba($color-negro, 0.8);
+    border-radius: $radio-md;
+    padding: $espaciado-xs 0;
+    margin-top: $espaciado-xs !important;
+}
+
+// Opciones individuales del menú //
+
+.dropdown-item {            //Estado hover//
+    color: $color-texto-suave;
+    font-family: $fuente-principal;
+    font-size: $tamano-chico;
+    padding: $espaciado-xs $espaciado-md;
+    transition: $transicion-rapida;
+    text-transform: capitalize;
+
+    &:hover,
+    &:focus {
+        background-color: rgba($color-rojo, 0.2);
+        color: $color-cian;
+    }
+}
+
+//Línea divisoria dentro del dropdown//
+.dropdown-divider {
+    border-color: rgba($color-blanco, 0.1);
+}

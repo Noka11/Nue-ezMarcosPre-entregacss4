@@ -1,0 +1,21 @@
+@use "../utilities/variables" as *;
+
+.logo {
+    height: $alto-logo;
+    width: auto;
+}
+
+.navbar-brand .logo {
+    height: $alto-logo;
+}
+
+header .navbar {
+    background-color: $color-fondo;
+    border-bottom: 2px solid $color-rojo;
+    padding: $espaciado-xs $espaciado-md;
+}
+
+.navbar-brand .logo {
+    max-width: 150px;
+    height: auto;
+}

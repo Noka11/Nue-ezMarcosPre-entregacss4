@@ -1,0 +1,6 @@
+@use "../utilities/variables" as *;
+
+.banner-destacado {
+    background: linear-gradient(135deg, $color-superficie 0%, $color-fondo 100%);
+    border: 1px solid rgba($color-cian, 0.3);
+}

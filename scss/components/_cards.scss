@@ -1,0 +1,31 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+@use "../utilities/placeholders" as *;
+
+.card-valohub {
+    @extend %tarjeta-interactiva;
+    background-color: $color-superficie;
+    border: 1px solid rgba($color-blanco, 0.08);
+    color: $color-blanco;
+
+    &:hover {
+        scale: 1.02;
+    }   
+
+    .card-img-top {
+        height: 280px;
+        object-fit: cover;
+        object-position: center top;
+        background-color: $color-fondo-imagen ;
+    }
+
+     .card-title {
+        font-family: $fuente-principal;
+        color: $color-blanco;
+    }
+
+    .card-text {
+        color: $color-texto-apagado;
+        font-size: $tamano-chico;
+    }
+}

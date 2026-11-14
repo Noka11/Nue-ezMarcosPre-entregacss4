@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="ValoHub">
+  <title>ValoHub</title>
+  <rect width="160" height="160" rx="28" fill="#0F1115"/>
+  <g>
+    <path d="M114.4 45.0 L130.0 54.0 L130.0 114.0 L78.0 144.0 L26.0 114.0 L26.0 54.0 L78.0 24.0 L93.6 33.0" fill="none" stroke="#00ECE6" stroke-width="10" stroke-linejoin="miter" stroke-linecap="butt"/>
+    <path d="M101.1 20.0 L121.9 32.0" fill="none" stroke="#FF4655" stroke-width="10" stroke-linecap="butt"/>
+    <path d="M78.0 48.0 L109.2 66.0 L109.2 102.0 L78.0 120.0 L46.8 102.0 L46.8 66.0 Z" fill="none" stroke="#00ECE6" stroke-width="3" stroke-opacity="0.55" stroke-linejoin="miter"/>
+    <path d="M78 67.8 L94.2 84 L78 100.2 L61.8 84 Z" fill="#FF4655"/>
+  </g>
+</svg>

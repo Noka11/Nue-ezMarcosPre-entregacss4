@@ -1,0 +1,27 @@
+@use "variables" as *;
+
+@mixin boton-base {
+    font-family: $fuente-principal;
+    text-transform: uppercase;
+    }
+
+@mixin badge {
+      font-size: $tamano-badge;
+    text-transform: uppercase;
+    font-weight: $peso-negrita;
+    }
+@mixin transicion-elevacion {
+ transition: transform $duracion-base $curva-salida, box-shadow $duracion-base $curva-salida;
+}
+
+@mixin flex-columna($separacion) {
+    display: flex;
+    flex-direction: column;
+    gap: $separacion;
+}
+// Aplica estilos desde cierto ancho en adelante (mobile-first)
+@mixin desde($ancho) {
+    @media (min-width: $ancho) {
+        @content;
+    }
+}
