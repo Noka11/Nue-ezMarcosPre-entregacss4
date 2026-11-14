@@ -1,19 +1,13 @@
 @use "../utilities/variables" as *;
-
 @use "../utilities/mixins" as *;
+@use "../utilities/placeholders" as *;
 
 .border-valohub {
     border: 1px solid rgba($color-blanco, 0.08);
 }
 
 .card-tactical {
-    @include transicion-elevacion;
-
-    &:hover {
-        transform: translateY(-5px);
-        border-color: $color-rojo;
-        box-shadow: 0 8px 20px rgba($color-rojo, 0.25);
-    }
+    @extend %tarjeta-interactiva;
 }
 
 .mapa-img-caja {
@@ -36,6 +30,10 @@
 }
 
 .mapa-img-lateral {
-    min-height: $alto-min-lateral;
-    object-fit: cover;
+    height: $alto-mapa-caja;
+
+    @include desde($bp-sm) {
+        height: auto;
+        min-height: $alto-min-lateral;
+    }
 }

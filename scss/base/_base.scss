@@ -1,6 +1,9 @@
 @use "../utilities/variables" as *;
-
+html {
+    overflow-x: hidden;
+}
 body {
+     overflow-x: hidden;
     color: $color-texto;
     background-color: $color-fondo;
     margin: 0;

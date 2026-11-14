@@ -1,8 +1,12 @@
 @use "../utilities/variables" as *;
 
 .logo {
-    max-width: 200px;
-    height: auto;
+    height: $alto-logo;
+    width: auto;
+}
+
+.navbar-brand .logo {
+    height: $alto-logo;
 }
 
 header .navbar {

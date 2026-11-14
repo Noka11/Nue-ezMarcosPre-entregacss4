@@ -1,5 +1,5 @@
     @use "../utilities/variables" as *;
-
+    @use "../utilities/mixins" as *;
     .carousel {
 
         width: 100vw;
@@ -64,7 +64,7 @@
         }
 
 
-        @media (min-width: 992px) {
+        @include desde($bp-lg) {
             height: 580px;
         }
     }

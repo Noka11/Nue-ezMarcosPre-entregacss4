@@ -19,7 +19,7 @@
         width: 48px;
         height: 2px;
         margin-top: 0.6rem;
-        background-color: #00ECE6;
+        background-color: $color-cian;
         transform-origin: left;
         transition: transform $duracion-base $curva-salida;
     }

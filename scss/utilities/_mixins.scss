@@ -19,3 +19,9 @@
     flex-direction: column;
     gap: $separacion;
 }
+// Aplica estilos desde cierto ancho en adelante (mobile-first)
+@mixin desde($ancho) {
+    @media (min-width: $ancho) {
+        @content;
+    }
+}
