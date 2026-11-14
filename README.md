@@ -2,8 +2,8 @@
 
 Sitio web estático de 6 páginas sobre **Valorant**: agentes, mapas, estrategias, esports y notas de parche. Proyecto final del curso de CSS de Coderhouse (Diplomatura Full Stack).
 
-🔗 **Sitio online:** https://TU-SITIO.netlify.app  <!-- reemplazar por el link real del deploy -->
-📁 **Repositorio:** https://github.com/TU-USUARIO/TU-REPO  <!-- reemplazar -->
+🔗 **Sitio online:** https://valohub-marcos.netlify.app  
+📁 **Repositorio:** https://github.com/Noka11/Nue-ezMarcosPre-entregacss4/tree/feature/preentrega-6-sass  
 
 > Proyecto educativo sin fines de lucro. No está afiliado ni respaldado por Riot Games. Valorant es marca registrada de Riot Games, Inc.
 
